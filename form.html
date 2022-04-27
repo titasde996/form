@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html> 
+<head> <style> body { 
+  background-image: url('frm1.jpg'); 
+} 
+fieldset { 
+  background-color: #a0a0a0; 
+} 
+ 
+ 
+input {   margin: 5px; } 
+ 
+</style> 
+<head> 
+<body> 
+ 
+ 
+<h1>Registration Form</h1> 
+ 
+<form action="/action_page.php"> 
+<fieldset> 
+  <label for="First_Name">First Name:</label> 
+  <input type="text"STYLE="color: #fcede; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #6a5acd;" size="10" id="First_Name" name="First Name"required ><br><br> 
+  <label for="Last_Name">Last Name:</label> 
+  <input type="text"STYLE="color: #fcede; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #6a5acd;" size="10" id=STYLE="color: #fcede; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #fbadde;" size="10""Last_Name" name="Last Name" required<br><br><label for="country2_code"><br><br> 
+    <label for="User_Id">User Id:</label> 
+  <input type="text"STYLE="color: #fcede; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #6a5acd;" size="10" id=STYLE="color: #fcede; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #fbadde;" size="10""User_Id" name="User Id" required<br><br><label for="country2_code"><br><br> 
+  <label for="email_id">Email Id:</label> 
+  <input type="email"STYLE="color: #fcede; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #6a5acd;" size="10" id="email_id" name="email id" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="give valid email id"><br><br> 
+  <label for="Password">Password:</label> 
+  <input type="password"STYLE="color: #fcede; font-family: Verdana; font-weight: 
+bold; font-size: 12px; background-color: #6a5acd;" size="10" id="Password" name="Password" reqiured><br><br> 
+   <label for="Confirm_Password">Confirm Password:</label> 
+  <input type="password"STYLE="color: #fcede; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #6a5acd;" size="10" id="Confirm_Password" name="Confirm Password" reqiured><br><br> 
+  <input type="submit"> 
+  <input type="reset" value="Reset"> 
+   
+</form> <script> 
+var password = document.getElementById("Password") 
+  , confirm_password = document.getElementById("Confirm_Password"); 
+ 
+function validatePassword(){ 
+  if(password.value != confirm_password.value) { 
+    confirm_password.setCustomValidity("Passwords Does not Match" ); 
+  } else { 
+    Confirm_Password.setCustomValidity(''); 
+  } 
+} 
+ 
+Password.onchange = validatePassword; 
+Confirm_Password.onkeyup = validatePassword;</script> 
+ 
+ 
+ 
+</body> 
+</html>
